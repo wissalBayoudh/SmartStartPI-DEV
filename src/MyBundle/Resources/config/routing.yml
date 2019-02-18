@@ -1,0 +1,9 @@
+admin:
+    path:     /admin
+    defaults: { _controller: MyBundle:Admin:admin }
+contact:
+    path:     /contact
+    defaults: { _controller: MyBundle:Default:contact }
+my_homepage:
+    path:     /
+    defaults: { _controller: MyBundle:Default:index }

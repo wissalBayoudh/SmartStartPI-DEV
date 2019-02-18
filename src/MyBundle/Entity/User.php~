@@ -1,0 +1,110 @@
+<?php
+// src/AppBundle/Entity/User.php
+
+namespace MyBundle\Entity;
+
+use FOS\UserBundle\Model\User as BaseUser;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="fos_user")
+ */
+class User extends BaseUser
+{
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="nom", type="string", length=255, nullable=true)
+     */
+    private $nom;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="prenom", type="string", length=255, nullable=true)
+     */
+    private $prenom;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="telephone", type="integer", nullable=true)
+     */
+    private $telephone;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="adresse", type="string", length=255, nullable=true)
+     */
+    private $adresse;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="codeFiscale", type="string", length=255, nullable=true)
+     */
+    private $codefiscale;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="statutJuredique", type="string", length=255, nullable=true)
+     */
+    private $statutjuredique;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="dateCreation", type="date", nullable=true)
+     */
+    private $datecreation;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="specialite", type="string", length=255, nullable=true)
+     */
+    private $specialite;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="niveauEtude", type="string", length=255, nullable=true)
+     */
+    private $niveauetude;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="diplome", type="string", length=255, nullable=true)
+     */
+    private $diplome;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="governement", type="string", length=255, nullable=true)
+     */
+    private $governement;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="note", type="integer", nullable=true)
+     */
+    private $note;
+
+    public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
+}

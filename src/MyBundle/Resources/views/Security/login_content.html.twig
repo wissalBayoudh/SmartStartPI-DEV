@@ -1,0 +1,102 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+ {% if error %}
+     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+ {% endif %}
+<div class="jp_tittle_main_wrapper">
+    <div class="jp_tittle_img_overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="jp_tittle_heading_wrapper">
+                    <div class="jp_tittle_heading">
+                        <h2>Login</h2>
+                    </div>
+                    <div class="jp_tittle_breadcrumb_main_wrapper">
+                        <div class="jp_tittle_breadcrumb_wrapper">
+                            <ul>
+                                <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
+                                <li><a href="#">Pages</a> <i class="fa fa-angle-right"></i></li>
+                                <li>Login</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<form action="{{ path("fos_user_security_check") }}" method="post">
+
+    <div class="login_section">
+        <!-- login_form_wrapper -->
+        <div class="login_form_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <!-- login_wrapper -->
+                        <h1>LOGIN TO YOUR ACCOUNT</h1>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.login_form_wrapper-->
+    </div>
+    <div class="login_wrapper">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                <a href="#" class="btn btn-primary"> <span>Login with Facebook</span> <i class="fa fa-facebook"></i> </a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+                <a href="#" class="btn btn-primary google-plus"> Login  with Google <i class="fa fa-google-plus"></i> </a>
+            </div>
+        </div>
+        <h2>or</h2>
+        {% if csrf_token %}
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        {% endif %}
+        <div class="formsix-pos">
+            <div class="form-group i-email">
+                <label for="username">{{ 'security.login.username'|trans }}</label>
+                <input type="text" class="form-control" id="username" name="_username" value="{{ last_username }}" required="required" autocomplete="username" placeholder="Username*" />
+
+            </div>
+        </div>
+        <div class="formsix-e">
+            <div class="form-group i-password">
+                <label for="password">{{ 'security.login.password'|trans }}</label>
+                <input type="password" class="form-control" id="password" name="_password" required="required" autocomplete="current-password" placeholder="Password *" />
+
+            </div>
+        </div>
+        <div class="login_remember_box">
+            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+            <label class="control control--checkbox" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+
+            <a href="#" class="forget_password">
+                Forgot Password
+            </a>
+        </div>
+        <div class="login_btn_wrapper">
+            <a> <input class="btn btn-primary login_btn" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            </a>
+        </div>
+        <div class="login_message">
+            <p>Don’t have an account ? <a href="#"> Register Now </a> </p>
+        </div>
+    </div>
+    <p>In case you are using a public/shared computer we recommend that
+        you logout to prevent any un-authorized access to your account</p>
+    <!-- /.login_wrapper-->
+
+
+
+
+
+
+
+
+
+</form>
