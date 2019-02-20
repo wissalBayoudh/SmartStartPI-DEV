@@ -27,3 +27,19 @@ rechercheMission:
 
 
 
+
+ajout:
+    path:     /ajout
+    defaults: { _controller: MissionBundle:Categorie:ajout }
+
+delete:
+    path:     /delete
+    defaults: { _controller: MissionBundle:Categorie:delete }
+
+update:
+    path:     /update
+    defaults: { _controller: MissionBundle:Categorie:update }
+
+show:
+    path:     /show
+    defaults: { _controller: MissionBundle:Categorie:show }

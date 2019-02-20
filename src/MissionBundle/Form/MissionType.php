@@ -32,7 +32,7 @@ class MissionType extends AbstractType
                 )
             ))
             ->add('nom')->add('nombrepersonne')
-            ->add('deshebergement',TextareaType::class)->add('destransport',TextareaType::class)
+
 
         ->add('categorie',EntityType::class,array(
         'class'=>'MissionBundle\Entity\Categorie',

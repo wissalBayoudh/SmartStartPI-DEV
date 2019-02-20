@@ -16,7 +16,6 @@ mission_update:
     defaults: { _controller: "MissionBundle:Mission:update" }
 
 mission_delete:
-    path:     /delete/{id}
     defaults: { _controller: "MissionBundle:Mission:delete" }
 rechercheMission:
     path:     /recherchenom

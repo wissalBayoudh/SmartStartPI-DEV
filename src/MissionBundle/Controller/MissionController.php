@@ -100,7 +100,7 @@ class MissionController extends Controller
             $data = $se->normalize($missions);
             return new JsonResponse($data);
         }
-        return $this->render('@Mission/mission/rechercheMission.html.twig', array(// ...
+        return $this->render('@Mission/mission/index.html.twig', array(// ...
         ));
     }
 }
