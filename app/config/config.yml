@@ -88,4 +88,3 @@ fos_user:
             type: MytBundle\Form\RegistrationType
     service:
         mailer: 'fos_user.mailer.noop'
-
