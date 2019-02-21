@@ -40,7 +40,7 @@ class CategorieController extends Controller
         ));
     }
 
-    public function deleteAction($id)
+    public function deleteCategorieAction($id)
     {
         $em=$this->getDoctrine()->getManager();
         $categorie=$em->getRepository(Categorie::class)->find($id);
@@ -50,9 +50,21 @@ class CategorieController extends Controller
 
     }
 
-    public function updateAction()
+    public function updateCategorieAction(Request $request ,$id)
     {
-        return $this->render('MissionBundle:Categorie:update.html.twig', array(
+        $em=$this->getDoctrine()->getManager();
+        $categorie=$em->getRepository(Categorie::class)->find($id);
+        $form=$this->createForm(CategorieType::class,$categorie);
+
+        $form=$form->handleRequest($request);
+        if ($form->isValid())
+        {
+            $em->flush();
+            return $this->redirectToRoute('ManageMissionBack');
+        }
+
+
+        return $this->render('@Mission/Categorie/update.html.twig', array(
             // ...
         ));
     }

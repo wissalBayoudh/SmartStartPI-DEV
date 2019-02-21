@@ -92,9 +92,9 @@
                                     <th>Nom</th>
                                     <th>Version</th>
                                     <th>Description</th>
-                                    <th>
-                                        Delete
-                                    </th>
+                                    <th>Delete</th>
+                                    <th>Update</th>
+
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -105,7 +105,10 @@
                                         <td>{{ categorie.version }}</td>
                                         <td>{{ categorie.description }}</td>
                                         <td>
-                                            <li><a href="{{ path('delete', { 'id': categorie.id }) }}" class="btn btn-inverse-danger btn-fw"> Delete</a></li>
+                                            <li><a href="{{ path('deleteCategorie', { 'id': categorie.id }) }}" class="btn btn-inverse-danger btn-fw"> Delete</a></li>
+                                        </td>
+                                        <td>
+                                            <li><a href="{{ path('updateCategorie', { 'id': categorie.id }) }}" class="btn btn-inverse-success btn-fw"> Update</a></li>
                                         </td>
                                     </tr>
 

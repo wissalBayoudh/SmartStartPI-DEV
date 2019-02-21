@@ -32,13 +32,13 @@ ajout:
     path:     /ajout
     defaults: { _controller: MissionBundle:Categorie:ajout }
 
-delete:
-    path:     /delete/{id}
-    defaults: { _controller: MissionBundle:Categorie:delete }
+deleteCategorie:
+    path:     /deleteCategorie/{id}
+    defaults: { _controller: MissionBundle:Categorie:deleteCategorie }
 
-update:
-    path:     /update
-    defaults: { _controller: MissionBundle:Categorie:update }
+updateCategorie:
+    path:     /updateCategorie/{id}
+    defaults: { _controller: MissionBundle:Categorie:updateCategorie }
 
 show:
     path:     /show
