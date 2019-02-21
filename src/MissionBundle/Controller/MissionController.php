@@ -7,6 +7,7 @@ namespace MissionBundle\Controller;
 use MissionBundle\Entity\Mission;
 use MissionBundle\Form\MissionType;
 use MissionBundle\Repository\MissionRepository;
+use Proxies\__CG__\MissionBundle\Entity\Categorie;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -103,5 +104,6 @@ class MissionController extends Controller
         return $this->render('@Mission/mission/rechercheMission.html.twig', array(// ...
         ));
     }
+
 
 }

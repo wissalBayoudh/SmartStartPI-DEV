@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class CategorieController extends Controller
 {
-    public function ManageMissionBackAction(Request $request)
+    public function ManageMissionBackAction()
     {
 
         $em = $this->getDoctrine()->getManager();
@@ -75,6 +75,14 @@ class CategorieController extends Controller
     {
         return $this->render('@Mission/Categorie/show.html.twig', array(
             // ...
+        ));
+    }
+    public function computeAction($id)
+    {
+        $n=$this->getDoctrine()->getRepository(Mission::class)->computeDQL($id);
+
+        return $this->render('@Mission/Categorie/compute.html.twig', array(
+            'nb'=>$n
         ));
     }
 
