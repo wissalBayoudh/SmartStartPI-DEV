@@ -33,7 +33,7 @@ ajout:
     defaults: { _controller: MissionBundle:Categorie:ajout }
 
 delete:
-    path:     /delete
+    path:     /delete/{id}
     defaults: { _controller: MissionBundle:Categorie:delete }
 
 update:
@@ -43,3 +43,6 @@ update:
 show:
     path:     /show
     defaults: { _controller: MissionBundle:Categorie:show }
+ManageMissionBack:
+    path:     /all
+    defaults: { _controller: MissionBundle:Categorie:ManageMissionBack }

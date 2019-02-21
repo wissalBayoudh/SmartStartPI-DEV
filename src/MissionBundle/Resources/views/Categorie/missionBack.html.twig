@@ -1,0 +1,141 @@
+{% extends "baseB.html.twig" %}
+{% block content%}
+
+    <div class="container-fluid page-body-wrapper">
+
+    <div class="content-wrapper">
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Mission Table</h4>
+            <p class="card-description">Missions Details </p>
+            <div class="table-responsive">
+                <table class="table table-striped" >
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>
+                           Nom
+                        </th>
+                        <th>
+                            Duration
+                        </th>
+                        <th>
+                            Salary
+                        </th>
+                        <th>
+                            Accomondation
+                        </th>
+                        <th>
+                            Transport
+                        </th>
+                        <th>
+                            Update
+                        </th>
+                        <th>
+                            Delete
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for mission in missions %}
+                    <tr>
+
+                        <td class="py-1">
+                            <img src="{{ asset('bundles/images/content/job_post_img1.jpg') }}" alt="image" />
+                        </td>
+                        <td>
+                            {{ mission.nom }}
+                        </td>
+
+                        <td>
+                            {{ mission.Duree }}
+                        </td>
+                        <td>
+                            {{ mission.prix }}
+                        </td>
+                        <td>
+                            {{ mission.hebergement }}
+                        </td>
+                        <td>
+                            {{ mission.transport }}
+                        </td>
+                        <td>
+                            <li><a  href="{{ path('mission_update', { 'id': mission.id }) }}" class="btn btn-outline-success"> Update</a></li>
+                        </td>
+                        <td>
+                            <li><a href="{{ path('mission_delete', { 'id': mission.id }) }}" class="btn btn-outline-danger"> Delete</a></li>
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Categorie Table</h4>
+                        <p class="card-description">
+                            Categorie Details
+
+                        </p>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Nom</th>
+                                    <th>Version</th>
+                                    <th>Description</th>
+                                    <th>
+                                        Delete
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for categorie in categories %}
+                                    <tr>
+                                        <td>{{ categorie.id }}</td>
+                                        <td>{{ categorie.nom }}</td>
+                                        <td>{{ categorie.version }}</td>
+                                        <td>{{ categorie.description }}</td>
+                                        <td>
+                                            <li><a href="{{ path('delete', { 'id': categorie.id }) }}" class="btn btn-inverse-danger btn-fw"> Delete</a></li>
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+</div>
+
+
+        <div class="col-lg-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title"> Categorie </h4>
+                    <p class="card-description">
+                        Add class
+                        <code>.table-hover</code>
+                    </p>
+
+                </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
+

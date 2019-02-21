@@ -3,37 +3,35 @@
 {% block content%}
 
     {{ form_start(form, {'method': 'post', 'action': path('ajout') }) }}
-
-    <div class="col-md-6 grid-margin stretch-card">
+<center>
+    <div class="col-12 grid-margin">
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Add Categorie</h4>
                 <p class="card-description">
                     Categorie form elements
                 </p>
-                <form class="forms-sample">
-                    <div class="form-group">
-                        <label for="exampleInputName1">Id</label>
-                        {{ form_row(form.id) }}
+
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail3">Nom</label>
+
                         {{ form_row(form.nom) }}
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleInputCity1">Version</label>
+
                         {{ form_row(form.version) }}
                     </div>
                     <div class="form-group">
-                        <label for="exampleTextarea1">Description</label>
+
                         {{ form_row(form.description) }}
                     </div>
                     <button type="submit" class="btn btn-success mr-2">Submit</button>
                     <button class="btn btn-light">Cancel</button>
-                </form>
+
             </div>
         </div>
-    </div>
+</center>
+    {{ form_rest(form) }}
     {{ form_end(form) }}
 {% endblock %}

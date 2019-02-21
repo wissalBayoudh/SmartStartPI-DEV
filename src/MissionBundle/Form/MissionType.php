@@ -21,20 +21,15 @@ class MissionType extends AbstractType
             'choices'=> array(
                 'Oui'=>'Oui',
                 'Non'=>'Non',
-
             )
         ))
             ->add('prix')->add('transport',ChoiceType::class ,array(
                 'choices'=> array(
                     'Oui'=>'Oui',
-                    'Non'=>'Non',
-
-                )
+                    'Non'=>'Non', )
             ))
             ->add('nom')->add('nombrepersonne')
-
-
-        ->add('categorie',EntityType::class,array(
+            ->add('categorie',EntityType::class,array(
         'class'=>'MissionBundle\Entity\Categorie',
         'choice_label'=>'nom',
         'multiple'=>false
