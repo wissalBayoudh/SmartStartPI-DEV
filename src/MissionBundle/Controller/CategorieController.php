@@ -10,8 +10,9 @@ use Symfony\Component\HttpFoundation\Request;
 
 class CategorieController extends Controller
 {
-    public function ManageMissionBackAction()
+    public function ManageMissionBackAction(Request $request)
     {
+
         $em = $this->getDoctrine()->getManager();
         $categories = $em->getRepository('MissionBundle:Categorie')->findAll();
 
@@ -39,17 +40,6 @@ class CategorieController extends Controller
             'form'=>$form->createView()
         ));
     }
-
-    public function deleteCategorieAction($id)
-    {
-        $em=$this->getDoctrine()->getManager();
-        $categorie=$em->getRepository(Categorie::class)->find($id);
-        $em->remove($categorie);
-        $em->flush();
-        return $this->redirectToRoute('ManageMissionBack');
-
-    }
-
     public function updateCategorieAction(Request $request ,$id)
     {
         $em=$this->getDoctrine()->getManager();
@@ -65,9 +55,21 @@ class CategorieController extends Controller
 
 
         return $this->render('@Mission/Categorie/update.html.twig', array(
-            // ...
+            'form'=>$form->createView(),
+            'categorie' => $categorie,
         ));
     }
+    public function deleteCategorieAction($id)
+    {
+        $em=$this->getDoctrine()->getManager();
+        $categorie=$em->getRepository(Categorie::class)->find($id);
+        $em->remove($categorie);
+        $em->flush();
+        return $this->redirectToRoute('ManageMissionBack');
+
+    }
+
+
 
     public function showAction()
     {
