@@ -14,6 +14,7 @@ class CategorieController extends Controller
     public function ManageMissionBackAction()
     {
 
+
         $em = $this->getDoctrine()->getManager();
         $categories = $em->getRepository('MissionBundle:Categorie')->findAll();
 

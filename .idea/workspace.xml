@@ -4,10 +4,6 @@
     <list default="true" id="b63c42bc-1fd0-4c46-b2fd-b4436b9dacfd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,15 +20,16 @@
     <session id="-390471429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.75" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -40,7 +37,7 @@
           <entry key="html" value="9" />
           <entry key="json" value="3" />
           <entry key="php" value="36" />
-          <entry key="twig" value="39" />
+          <entry key="twig" value="41" />
           <entry key="yml" value="13" />
         </counts>
       </usages-collector>
@@ -49,46 +46,46 @@
           <entry key="HTML" value="9" />
           <entry key="JSON" value="3" />
           <entry key="PHP" value="36" />
-          <entry key="Twig" value="39" />
+          <entry key="Twig" value="41" />
           <entry key="YAML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="4" />
-          <entry key="php" value="685" />
-          <entry key="twig" value="2124" />
+          <entry key="php" value="701" />
+          <entry key="twig" value="2279" />
           <entry key="txt" value="98" />
-          <entry key="yml" value="187" />
+          <entry key="yml" value="192" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="685" />
+          <entry key="PHP" value="701" />
           <entry key="PLAIN_TEXT" value="98" />
-          <entry key="Twig" value="2124" />
-          <entry key="YAML" value="187" />
+          <entry key="Twig" value="2279" />
+          <entry key="YAML" value="192" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
+            <state relative-caret-position="200">
+              <caret line="111" column="136" selection-start-line="111" selection-start-column="136" selection-end-line="111" selection-end-column="136" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1020">
-              <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+            <state relative-caret-position="1480">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -96,8 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+            <state relative-caret-position="1042">
+              <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
               <folding>
                 <element signature="e#44#79#0#PHP" expanded="true" />
               </folding>
@@ -108,8 +105,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="-660">
+              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="e#46#79#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +117,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+            <state relative-caret-position="120">
+              <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/update.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-60">
+              <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -126,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+            <state relative-caret-position="122">
+              <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -246,12 +255,12 @@
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/update.html.twig" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/mission/compute.html.twig" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" />
       </list>
     </option>
@@ -480,7 +489,8 @@
       <workItem from="1550658488668" duration="1000000" />
       <workItem from="1550679382962" duration="1904000" />
       <workItem from="1550770733201" duration="13787000" />
-      <workItem from="1550816010756" duration="3571000" />
+      <workItem from="1550816010756" duration="3594000" />
+      <workItem from="1550831103943" duration="1631000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550515633542</created>
@@ -538,17 +548,24 @@
       <option name="project" value="LOCAL" />
       <updated>1550784563080</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="a">
+      <created>1550819623276</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1550819623276</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79063000" />
+    <option name="totallyTimeSpent" value="80717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22692889" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -797,24 +814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="99" selection-start-line="3" selection-start-column="99" selection-end-line="3" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/forms/basic_elements.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="714" column="48" selection-start-line="714" selection-start-column="48" selection-end-line="714" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/ajout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -825,23 +828,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.482/etudiantRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.041/projetRepository.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.953/etudiantRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.482/etudiantRepository.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.041/projetRepository.php" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa0.953/etudiantRepository.php" />
     <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/ui-features/buttons.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2137">
@@ -849,23 +838,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
-          <folding>
-            <element signature="e#44#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,9 +856,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
           <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -893,38 +866,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        <state relative-caret-position="1480">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/ajout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="600">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+        <state relative-caret-position="122">
+          <caret line="33" selection-start-line="33" selection-end-line="33" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-660">
+          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="e#46#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1042">
+          <caret line="59" column="40" lean-forward="true" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+          <folding>
+            <element signature="e#44#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/update.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1020">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+        <state relative-caret-position="200">
+          <caret line="111" column="136" selection-start-line="111" selection-start-column="136" selection-end-line="111" selection-end-column="136" />
         </state>
       </provider>
     </entry>

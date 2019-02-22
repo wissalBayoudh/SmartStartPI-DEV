@@ -93,7 +93,7 @@
                                     <th>Description</th>
                                     <th>Delete</th>
                                     <th>Update</th>
-
+                                    <th> Number of Mission</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -109,8 +109,13 @@
                                         <td>
                                             <li><a href="{{ path('updateCategorie', { 'id': categorie.id }) }}" class="btn btn-inverse-success btn-fw"> Update</a></li>
                                         </td>
-                                        <td><a href="{{ path('computeCategorie',{'id':categorie.id}) }}">Count</a> </td>
+                                        <td>
+                                        <li>
+                                            <a href="{{ path('computeCategorie', { 'id': categorie.id }) }}" class="btn btn-inverse-info btn-fw"> Count</a></li>
+                                        </td>
+
                                     </tr>
+
 
                                 {% endfor %}
                                 </tbody>
