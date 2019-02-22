@@ -1,3 +1,7 @@
+demande:
+    resource: "@DemandeBundle/Resources/config/routing.yml"
+    prefix:   /
+
 challenge:
     resource: "@ChallengeBundle/Resources/config/routing.yml"
     prefix:   /challenge
