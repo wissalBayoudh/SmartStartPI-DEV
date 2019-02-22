@@ -31,7 +31,7 @@ rechercheMission:
 ajout:
     path:     /ajout
     defaults: { _controller: MissionBundle:Categorie:ajout }
-compute:
+computeCategorie:
     path:     /compute/{id}
     defaults: { _controller: MissionBundle:Categorie:compute }
 deleteCategorie:

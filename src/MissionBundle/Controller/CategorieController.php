@@ -6,6 +6,7 @@ use MissionBundle\Entity\Categorie;
 use MissionBundle\Entity\Mission;
 use MissionBundle\Form\CategorieType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use MissionBundle\Repository\MissionRepository;
 use Symfony\Component\HttpFoundation\Request;
 
 class CategorieController extends Controller
@@ -79,9 +80,12 @@ class CategorieController extends Controller
     }
     public function computeAction($id)
     {
-        $n=$this->getDoctrine()->getRepository(Mission::class)->computeDQL($id);
+
+        $em = $this->getDoctrine()->getRepository(Mission::class);
+           $n=$em->computeDQL($id);
 
         return $this->render('@Mission/Categorie/compute.html.twig', array(
+
             'nb'=>$n
         ));
     }

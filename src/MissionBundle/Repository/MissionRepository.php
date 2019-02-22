@@ -22,7 +22,7 @@ class MissionRepository extends \Doctrine\ORM\EntityRepository
     public function computeDQL($id){
         $qb=$this->getEntityManager()
             ->createQuery("SELECT COUNT (c) as nb 
-                            FROM MissionBundle:Mission e 
+                            FROM MissionBundle:Mission c 
                             WHERE c.categorie=:n")
             ->setParameter('n',$id);
         return $qb->getResult();

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b63c42bc-1fd0-4c46-b2fd-b4436b9dacfd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" afterDir="false" />
@@ -21,67 +20,26 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/forms/basic_elements.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="357">
-                    <caret line="714" column="48" selection-start-line="714" selection-start-column="48" selection-end-line="714" selection-end-column="48" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/ui-features/buttons.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="2137">
-                    <caret line="445" column="43" selection-start-line="445" selection-start-column="43" selection-end-line="445" selection-end-column="43" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/tables/basic-table.html">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="94">
-                    <caret line="760" column="31" selection-start-line="760" selection-start-column="31" selection-end-line="760" selection-end-column="31" />
-                    <folding>
-                      <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                      <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                      <element signature="n#p#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-390471429">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.83" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="9" />
           <entry key="json" value="3" />
-          <entry key="php" value="32" />
+          <entry key="php" value="36" />
           <entry key="twig" value="39" />
           <entry key="yml" value="13" />
         </counts>
@@ -90,7 +48,7 @@
         <counts>
           <entry key="HTML" value="9" />
           <entry key="JSON" value="3" />
-          <entry key="PHP" value="32" />
+          <entry key="PHP" value="36" />
           <entry key="Twig" value="39" />
           <entry key="YAML" value="13" />
         </counts>
@@ -98,19 +56,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="json" value="4" />
-          <entry key="php" value="526" />
-          <entry key="twig" value="2115" />
+          <entry key="php" value="685" />
+          <entry key="twig" value="2124" />
           <entry key="txt" value="98" />
-          <entry key="yml" value="178" />
+          <entry key="yml" value="187" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="4" />
-          <entry key="PHP" value="526" />
+          <entry key="PHP" value="685" />
           <entry key="PLAIN_TEXT" value="98" />
-          <entry key="Twig" value="2115" />
-          <entry key="YAML" value="178" />
+          <entry key="Twig" value="2124" />
+          <entry key="YAML" value="187" />
         </counts>
       </usages-collector>
     </session>
@@ -121,19 +79,25 @@
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="428">
-              <caret line="111" column="86" selection-start-line="111" selection-start-column="86" selection-end-line="111" selection-end-column="86" />
-              <folding>
-                <element signature="n#div#0;n#!!top" />
-              </folding>
+              <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1020">
+              <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+            <state relative-caret-position="242">
+              <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
               <folding>
                 <element signature="e#44#79#0#PHP" expanded="true" />
               </folding>
@@ -144,32 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-              <folding>
-                <element signature="e#46#79#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-              <folding>
-                <element signature="e#7#87#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -186,8 +126,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+            <state relative-caret-position="162">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -259,9 +199,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -276,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/MyBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/baseadmin.html.twig" />
         <option value="$PROJECT_DIR$/src/MyBundle/Resources/views/Admin/admin.html.twig" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/mission/rechercheMission.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ChallengeBundle/Entity/Challenge.php" />
@@ -309,13 +245,14 @@
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/show.html.twig" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/update.html.twig" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/mission/compute.html.twig" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig" />
-        <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php" />
         <option value="$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php" />
+        <option value="$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig" />
       </list>
     </option>
   </component>
@@ -391,11 +328,9 @@
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="697" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -403,6 +338,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -426,7 +362,7 @@
               <item name="SmartStartPI-DEV" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="MissionBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SmartStartPI-DEV" type="b2602c69:ProjectViewProjectNode" />
@@ -455,6 +391,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="MissionBundle" type="462c0819:PsiDirectoryNode" />
               <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartStartPI-DEV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartStartPI-DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MissionBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="routing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SmartStartPI-DEV" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SmartStartPI-DEV" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="MissionBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resources" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -466,25 +419,15 @@
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Categorie" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SmartStartPI-DEV" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SmartStartPI-DEV" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="MissionBundle" type="462c0819:PsiDirectoryNode" />
-              <item name="Resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="mission" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Examen2016" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
@@ -536,7 +479,8 @@
       <workItem from="1550650503001" duration="3553000" />
       <workItem from="1550658488668" duration="1000000" />
       <workItem from="1550679382962" duration="1904000" />
-      <workItem from="1550770733201" duration="13762000" />
+      <workItem from="1550770733201" duration="13787000" />
+      <workItem from="1550816010756" duration="3571000" />
     </task>
     <task id="LOCAL-00001" summary="a">
       <created>1550515633542</created>
@@ -587,17 +531,24 @@
       <option name="project" value="LOCAL" />
       <updated>1550782438518</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="a">
+      <created>1550784563080</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1550784563080</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75467000" />
+    <option name="totallyTimeSpent" value="79063000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22390318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -790,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1420">
-          <caret line="71" column="54" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Categorie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2120">
@@ -822,23 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Form/CategorieType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-          <folding>
-            <element signature="e#38#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Form/MissionType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -888,9 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,11 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="760" column="31" selection-start-line="760" selection-start-column="31" selection-end-line="760" selection-end-column="31" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -923,6 +842,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/ui-features/buttons.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2137">
+          <caret line="445" column="43" selection-start-line="445" selection-start-column="43" selection-end-line="445" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="83" column="57" selection-start-line="83" selection-start-column="57" selection-end-line="83" selection-end-column="57" />
+          <folding>
+            <element signature="e#44#79#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" column="56" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
+          <folding>
+            <element signature="e#7#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Form/CategorieType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#38#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Form/MissionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/compute.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="20">
@@ -930,64 +900,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="111" column="86" selection-start-line="111" selection-start-column="86" selection-end-line="111" selection-end-column="86" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="140">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        <state relative-caret-position="162">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/CategorieRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Resources/views/Categorie/missionBack.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="428">
+          <caret line="111" column="78" selection-start-line="111" selection-start-column="78" selection-end-line="111" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/MissionController.php">
+    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Entity/Mission.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-          <folding>
-            <element signature="e#46#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Repository/MissionRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MissionBundle/Controller/CategorieController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#44#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/sem2Esprit/PI-DEV/StarAdmin-Free-Bootstrap-Admin-Template-master/pages/ui-features/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2137">
-          <caret line="445" column="43" selection-start-line="445" selection-start-column="43" selection-end-line="445" selection-end-column="43" />
+        <state relative-caret-position="-1020">
+          <caret line="11" column="74" selection-start-line="11" selection-start-column="74" selection-end-line="11" selection-end-column="74" />
         </state>
       </provider>
     </entry>
