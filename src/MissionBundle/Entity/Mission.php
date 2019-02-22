@@ -84,14 +84,14 @@ class Mission
     /**
      * @var string
      *
-     * @ORM\Column(name="deshebergement", type="string", length=255, nullable=false)
+     * @ORM\Column(name="deshebergement", type="string", length=255, nullable=true)
      */
     private $deshebergement;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="destransport", type="string", length=255, nullable=false)
+     * @ORM\Column(name="destransport", type="string", length=255, nullable=true)
      */
     private $destransport;
 

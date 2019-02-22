@@ -10,6 +10,8 @@ use Proxies\__CG__\MissionBundle\Entity\Categorie;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Serializer\Normalizer\ObjectNormalizer;
 use Symfony\Component\Serializer\Serializer;
 
@@ -104,6 +106,38 @@ class MissionController extends Controller
         return $this->render('@Mission/mission/rechercheMission.html.twig', array(// ...
         ));
     }
+    public function pdf2Action (Request $request)
+    {
+        return $this->render('@Mission/mission/plz.html.twig', array(
 
+        ));
+    }
+    public function pdfAction ()
+    {
+
+        $em = $this->getDoctrine()->getManager();
+       // $util = $em->getRepository('MissionBundle:Mission')->findAll();
+
+
+//        $ab = $em->getRepository('DemandeBundle:Demande')->findAll();
+
+    //    $b=$em->getRepository('MissionBundle:Categorie')->findAll();
+
+
+        $snappy = $this->get('knp_snappy.pdf');
+        $filename = 'myFirstSnappyPDF';
+
+        // use absolute path !
+        $pageUrl = $this->generateUrl('plz2', array(), UrlGeneratorInterface::ABSOLUTE_URL);
+
+        return new Response(
+            $snappy->getOutput($pageUrl),
+            200,
+            array(
+                'Content-Type'          => 'application/pdf',
+                'Content-Disposition'   => 'inline; filename="'.$filename.'.pdf"'
+            )
+        );
+    }
 
 }
