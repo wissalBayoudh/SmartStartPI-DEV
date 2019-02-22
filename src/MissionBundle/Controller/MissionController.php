@@ -77,6 +77,7 @@ class MissionController extends Controller
 
         return $this->render('@Mission/mission/update.html.twig', array(
             'form'=>$form->createView(),
+            'mission' => $mission
 
         ));
     }

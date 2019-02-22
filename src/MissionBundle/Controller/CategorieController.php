@@ -13,8 +13,6 @@ class CategorieController extends Controller
 {
     public function ManageMissionBackAction()
     {
-
-
         $em = $this->getDoctrine()->getManager();
         $categories = $em->getRepository('MissionBundle:Categorie')->findAll();
 
@@ -25,7 +23,6 @@ class CategorieController extends Controller
 
         ));
     }
-
     public function ajoutAction(Request $request)
     {
         $categorie= new Categorie();
@@ -54,8 +51,6 @@ class CategorieController extends Controller
             $em->flush();
             return $this->redirectToRoute('ManageMissionBack');
         }
-
-
         return $this->render('@Mission/Categorie/update.html.twig', array(
             'form'=>$form->createView(),
             'categorie' => $categorie,
@@ -70,9 +65,6 @@ class CategorieController extends Controller
         return $this->redirectToRoute('ManageMissionBack');
 
     }
-
-
-
     public function showAction()
     {
         return $this->render('@Mission/Categorie/show.html.twig', array(

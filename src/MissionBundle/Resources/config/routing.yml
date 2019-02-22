@@ -41,7 +41,6 @@ deleteCategorie:
 updateCategorie:
     path:     /updateCategorie/{id}
     defaults: { _controller: MissionBundle:Categorie:updateCategorie }
-
 show:
     path:     /show
     defaults: { _controller: MissionBundle:Categorie:show }
