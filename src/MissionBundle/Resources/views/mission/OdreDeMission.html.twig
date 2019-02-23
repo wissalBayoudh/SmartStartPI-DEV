@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ordre de Mission</title>
+
+        </head>
+<h2><strong> <center> <font size="6">  Mission Order </font></center></strong></h2>
+<body>
+<hr>
+<br>
+<br>
+<br>
+Date________________________
+
+<br>
+
+
+<font size="5">Company Name : {{ mission.identreprise.nom }}</font>
+
+<br>
+
+<h5> Dear Mr/Ms___________________________________________________</h5>
+
+<p>You have been given the awesome opportunity to join us in this Mission and you will be sent to________________________
+
+<p>Along with that opportunity comes an awesome responsibility, which is to fundraise to cover the cost of traveling to our mission field,
+eating and having somewhere to sleep while we are there.</p>
+
+<p><strong>You will find below all the Mission Details</strong></p>
+<hr>
+<table>
+    <tbody>
+    <tr>
+        <td class="td-w25">ID</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.id }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Duration</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.duree }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Accomondation</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.hebergement }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Transport</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.transport }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Number of person required </td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.nombrepersonne }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Salary</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.prix }}</td>
+    </tr>
+    <tr>
+        <td class="td-w25">Company Name</td>
+        <td class="td-w10">:</td>
+        <td class="td-w65">{{ mission.identreprise.nom }}</td>
+    </tr>
+
+    </tbody>
+</table>
+<hr>
+<p>On the lines below you can start to brainstorm who you can send your letter to.
+
+<p>1.	_______________________________________________</p>
+<p>2.	_______________________________________________</p>
+<p>3.	_______________________________________________</p>
+<p>4.	_______________________________________________</p>
+<p>5.	_______________________________________________</p>
+<p>6.	_______________________________________________</p>
+<p>7.	_______________________________________________</p>
+<p>8.	_______________________________________________<p>
+<p>9.	_______________________________________________<p>
+<p>10.	_______________________________________________<p>
+
+<br>
+  <p>  I know if you send out these letters you will raise lots of your trip cost,
+    maybe even so much the extra can go to funding all we are doing for missions.
+    God bless you in your efforts and I look forward to serving on the mission trip with you.</p>
+
+<p> Sincerly.</p>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+

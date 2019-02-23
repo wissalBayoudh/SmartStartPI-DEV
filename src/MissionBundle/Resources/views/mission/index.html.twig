@@ -45,6 +45,7 @@
                                 <li><i class="fas fa-user-friends"></i> Number of people required {{ mission.nombrepersonne }}</li>
                                 <li><a href="#"> ,Category {{ mission.categorie.nom }}</a></li>
                                 <li><a href="{{ path('mission_show', { 'id': mission.id }) }}">Show More </a></li>
+                                <li><a href="{{ path('OrdreDeMission', { 'id': mission.id })}}">Print PDF </a></li>
 
                             </ul>
                         </div>

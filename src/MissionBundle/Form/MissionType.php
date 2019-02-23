@@ -33,7 +33,12 @@ class MissionType extends AbstractType
         'class'=>'MissionBundle\Entity\Categorie',
         'choice_label'=>'nom',
         'multiple'=>false
-                ));
+                ))
+        ->add('identreprise',EntityType::class,array(
+        'class'=>'MyBundle\Entity\User',
+        'choice_label'=>'nom',
+        'multiple'=>false
+    ));
     }/**
      * {@inheritdoc}
      */

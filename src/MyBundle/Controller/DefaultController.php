@@ -18,7 +18,7 @@ class DefaultController extends Controller
             return $this->redirectToRoute('admin');
         }
 
-        return $this->render('@My/Default/mesdemandes.html.twig',[
+        return $this->render('@My/Default/index.html.twig',[
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }

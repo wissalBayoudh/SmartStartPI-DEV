@@ -4,6 +4,8 @@ namespace MissionBundle\Controller;
 
 
 
+use DemandeBundle\Entity\Demande;
+use Knp\Bundle\SnappyBundle\Snappy\Response\PdfResponse;
 use MissionBundle\Entity\Mission;
 use MissionBundle\Form\MissionType;
 use Proxies\__CG__\MissionBundle\Entity\Categorie;
@@ -106,37 +108,41 @@ class MissionController extends Controller
         return $this->render('@Mission/mission/rechercheMission.html.twig', array(// ...
         ));
     }
-    public function pdf2Action (Request $request)
+    public function OrdreDeMissionAction ($id)
     {
-        return $this->render('@Mission/mission/plz.html.twig', array(
+        $user = $this->getUser();
+        $em=$this->getDoctrine()->getManager();
+        $mission=$em->getRepository(Mission::class)->find($id);
 
+        $html=$this->render('@Mission/mission/OdreDeMission.html.twig', array(
+            'mission' => $mission,
+            'user' => $user
         ));
+        return new PdfResponse(
+            $this->get('knp_snappy.pdf')->getOutputFromHtml($html),
+            'file.pdf'
+        );
     }
     public function pdfAction ()
     {
 
-        $em = $this->getDoctrine()->getManager();
-       // $util = $em->getRepository('MissionBundle:Mission')->findAll();
-
-
-//        $ab = $em->getRepository('DemandeBundle:Demande')->findAll();
-
-    //    $b=$em->getRepository('MissionBundle:Categorie')->findAll();
-
-
         $snappy = $this->get('knp_snappy.pdf');
-        $filename = 'myFirstSnappyPDF';
+        $filename = 'PDFF';
+        $header = $this->renderView('@Mission/mission/header.html.twig',
+            array("title"=>"awesome pdf title"));
+        $footer = $this->renderView('@Mission/mission/footer.html.twig');
 
         // use absolute path !
-        $pageUrl = $this->generateUrl('plz2', array(), UrlGeneratorInterface::ABSOLUTE_URL);
-
-        return new Response(
-            $snappy->getOutput($pageUrl),
-            200,
+        //$pageUrl = $this->generateUrl('OrdreDeMission', array(), UrlGeneratorInterface::ABSOLUTE_URL);
+        $html = $this->generateUrl('OrdreDeMission', array(), UrlGeneratorInterface::ABSOLUTE_URL);
+        return new Response($snappy->generateFromHtml($html,$filename,
+            //200,
             array(
-                'Content-Type'          => 'application/pdf',
-                'Content-Disposition'   => 'inline; filename="'.$filename.'.pdf"'
-            )
+                //Content-Type'          => 'application/pdf',
+                //'Content-Disposition'   => 'inline; filename="'.$filename.'.pdf"',
+                'header-html'=>$header,
+            'footer-html' => $footer,))
+        //'Content-Disposition'   => 'attachment; filename="'.$filename.'.pdf"')
         );
     }
 

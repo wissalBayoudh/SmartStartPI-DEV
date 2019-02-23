@@ -50,6 +50,6 @@ ManageMissionBack:
 sandbox_pdfexample:
     path:     /pdf-example
     defaults: { _controller: MissionBundle:Mission:pdf }
-plz2:
-  path:     /pdf2
-  defaults: { _controller: MissionBundle:Mission:pdf2 }
+OrdreDeMission:
+  path:     /OrdreDeMission/{id}
+  defaults: { _controller: MissionBundle:Mission:OrdreDeMission }
