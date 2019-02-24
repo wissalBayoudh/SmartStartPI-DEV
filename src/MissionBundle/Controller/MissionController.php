@@ -52,12 +52,18 @@ class MissionController extends Controller
     }
     public function createAction(Request $request)
     {
+        $em = $this->getDoctrine()->getManager();
         $mission= new Mission();
         $form=$this->createForm(MissionType::class,$mission);
         $form=$form->handleRequest($request);
+        $user=$this->getUser()->getId();
+        $users = $em->getRepository('MissionBundle:User')->find($user);
+
         if($form->isValid())
         {
+
             $em=$this->getDoctrine()->getManager();
+            $mission->setIdEntreprise($users);
             $em->persist($mission);
             $em->flush();
             return $this->redirectToRoute('mission_index');
@@ -71,14 +77,15 @@ class MissionController extends Controller
         $em=$this->getDoctrine()->getManager();
         $mission=$em->getRepository(Mission::class)->find($id);
         $form=$this->createForm(MissionType::class,$mission);
+        $user=$this->getUser()->getId();
 
-        $form=$form->handleRequest($request);
-        if ($form->isValid())
-        {
-            $em->flush();
-            return $this->redirectToRoute('mission_index');
+        if($user=$id) {
+            $form = $form->handleRequest($request);
+            if ($form->isValid()) {
+                $em->flush();
+                return $this->redirectToRoute('mission_index');
+            }
         }
-
         return $this->render('@Mission/mission/update.html.twig', array(
             'form'=>$form->createView(),
             'mission' => $mission
@@ -87,6 +94,7 @@ class MissionController extends Controller
     }
     public function deleteAction($id)
     {
+
         $em=$this->getDoctrine()->getManager();
         $mission=$em->getRepository(Mission::class)->find($id);
         $em->remove($mission);

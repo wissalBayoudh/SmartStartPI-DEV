@@ -1,15 +1,11 @@
 <?php
-
 namespace MissionBundle\Entity;
-
 use Doctrine\ORM\Mapping as ORM;
-
-
 /**
  * Mission
  *
  * @ORM\Table(name="mission", indexes={@ORM\Index(name="idEntreprise", columns={"idEntreprise"})})
- * @ORM\Entity(repositoryClass="MissionBundle\Repository\MissionRepository")
+ * @ORM\Entity
  */
 class Mission
 {
@@ -21,79 +17,57 @@ class Mission
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
-
     /**
      * @var string
      *
      * @ORM\Column(name="duree", type="string", length=255, nullable=false)
      */
     private $duree;
-
     /**
      * @var string
      *
      * @ORM\Column(name="hebergement", type="string", length=255, nullable=false)
      */
     private $hebergement;
-
     /**
      * @var float
      *
      * @ORM\Column(name="prix", type="float", precision=10, scale=0, nullable=false)
      */
     private $prix;
-
     /**
      * @var string
      *
      * @ORM\Column(name="transport", type="string", length=255, nullable=false)
      */
     private $transport;
-
     /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=255, nullable=false)
      */
     private $nom;
-
     /**
      * @var integer
      *
      * @ORM\Column(name="nombrePersonne", type="integer", nullable=false)
      */
     private $nombrepersonne;
-
     /**
-     * @var \FosUser
+     * @var integer
      *
-     * @ORM\ManyToOne(targetEntity="MyBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idEntreprise", referencedColumnName="id")
+     *   @ORM\JoinColumn(name="idEntreprise", referencedColumnName="id", onDelete="cascade")
      * })
      */
-    private $identreprise;
-
+    private $idEntreprise;
     /**
      * @ORM\ManyToOne(targetEntity="MissionBundle\Entity\Categorie")
      * @ORM\JoinColumn(name="IdCategorie",referencedColumnName="id")
      *
      */
     Private $categorie;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="deshebergement", type="string", length=255, nullable=true)
-     */
-    private $deshebergement;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="destransport", type="string", length=255, nullable=true)
-     */
-    private $destransport;
 
 
 
@@ -251,77 +225,7 @@ class Mission
         return $this->nombrepersonne;
     }
 
-    /**
-     * Set deshebergement
-     *
-     * @param string $deshebergement
-     *
-     * @return Mission
-     */
-    public function setDeshebergement($deshebergement)
-    {
-        $this->deshebergement = $deshebergement;
 
-        return $this;
-    }
-
-    /**
-     * Get deshebergement
-     *
-     * @return string
-     */
-    public function getDeshebergement()
-    {
-        return $this->deshebergement;
-    }
-
-    /**
-     * Set destransport
-     *
-     * @param string $destransport
-     *
-     * @return Mission
-     */
-    public function setDestransport($destransport)
-    {
-        $this->destransport = $destransport;
-
-        return $this;
-    }
-
-    /**
-     * Get destransport
-     *
-     * @return string
-     */
-    public function getDestransport()
-    {
-        return $this->destransport;
-    }
-
-    /**
-     * Set identreprise
-     *
-     * @param \MyBundle\Entity\User $identreprise
-     *
-     * @return Mission
-     */
-    public function setIdentreprise(\MyBundle\Entity\User $identreprise = null)
-    {
-        $this->identreprise = $identreprise;
-
-        return $this;
-    }
-
-    /**
-     * Get identreprise
-     *
-     * @return \MyBundle\Entity\User
-     */
-    public function getIdentreprise()
-    {
-        return $this->identreprise;
-    }
 
     /**
      * Set categorie
@@ -345,5 +249,31 @@ class Mission
     public function getCategorie()
     {
         return $this->categorie;
+    }
+
+
+
+    /**
+     * Set idEntreprise
+     *
+     * @param \MissionBundle\Entity\User $idEntreprise
+     *
+     * @return Mission
+     */
+    public function setIdEntreprise(\MissionBundle\Entity\User $idEntreprise = null)
+    {
+        $this->idEntreprise = $idEntreprise;
+
+        return $this;
+    }
+
+    /**
+     * Get idEntreprise
+     *
+     * @return \MissionBundle\Entity\User
+     */
+    public function getIdEntreprise()
+    {
+        return $this->idEntreprise;
     }
 }

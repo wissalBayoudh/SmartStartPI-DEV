@@ -15,8 +15,10 @@
                 <div class="jp_adp_form_heading_wrapper">
                     <h2>Mission Details</h2>
                 </div>
+
                 <div class="jp_adp_form_wrapper"  >
-                    <a> {{ app.user.nom }}</a>
+                    <a> {{ app.user.id }}</a>
+                        <input type="text" name="idEntreprise" value="{{ app.user.id }}" hidden>
                 </div>
 
                 <div class="jp_adp_form_wrapper"  >
